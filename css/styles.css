@@ -1,3 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
+  background: #fafafa;
+}
 
+a {
+  text-decoration: none;
+  color: #385185;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.main-container .banner-container {
+  flex: 1 1 0;
+  width: 50%;
+  text-align: right;
+}
+.main-container .banner-container img {
+  margin-right: -15px;
+}
+.main-container .form-container {
+  flex: 1 1 0;
+  width: 50%;
+  text-align: center;
+}
+.main-container .form-container #form-box {
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  width: 350px;
+  margin-top: 30px;
+}
+.main-container .form-container #form-box #logo-insta {
+  height: 51px;
+  width: 175px;
+  margin: 30px auto 12px;
+  background-color: #fff;
+}
+.main-container .form-container #form-box #login-form {
+  margin-top: 20px;
+}
+.main-container .form-container #form-box #login-form input {
+  display: block;
+  font-size: 12px;
+  padding: 12px 9px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  width: 268px;
+  margin: 5px auto;
+}
+.main-container .form-container #form-box #login-form input[type=submit] {
+  background-color: #b2dffc;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 5px;
+  border-color: #b2dffc;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.main-container .form-container #form-box .separator {
+  position: relative;
+}
+.main-container .form-container #form-box .separator .line {
+  border-top: 1px solid #dbdbdb;
+  width: 268px;
+  margin: 15px auto 35px;
+}
+.main-container .form-container #form-box .separator span {
+  position: absolute;
+  top: -6px;
+  text-transform: uppercase;
+  color: #bbb;
+  width: 50px;
+  left: 50%;
+  margin-left: -25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.main-container .form-container #form-box #facebook-login {
+  margin-bottom: 25px;
+}
+.main-container .form-container #form-box #facebook-login a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .form-container #form-box #facebook-login a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.main-container .form-container #form-box #facebook-login a span {
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 1px;
+}
+.main-container .form-container #form-box #forgot-pass {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.main-container .form-container .register-container {
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  width: 350px;
+  margin-top: 30px;
+  margin-top: 10px;
+  padding: 25px;
+}
+.main-container .form-container .register-container p {
+  font-size: 14px;
+  color: #262626;
+}
+.main-container .form-container .register-container p a {
+  color: #4a95f6;
+  font-weight: bold;
+}
+.main-container .form-container .get-app-container {
+  text-align: center;
+  width: 350px;
+}
+.main-container .form-container .get-app-container p {
+  margin: 20px 0;
+  font-size: 13px;
+}
+.main-container .form-container .get-app-container img {
+  width: 136px;
+  height: 40px;
+}
+
+footer {
+  text-align: left;
+  width: 1000px;
+  margin: 50px auto;
+}
+footer .footer-links li {
+  margin-right: 10px;
+}
+footer .footer-links li a {
+  color: #00376b;
+  font-size: 12px;
+  font-weight: bold;
+}
+footer #copyright {
+  font-size: 12px;
+  color: #8e8e8e;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
 
 /*# sourceMappingURL=styles.css.map */

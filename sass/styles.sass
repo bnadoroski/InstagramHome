@@ -3,6 +3,10 @@ $secondary-color: #dbdbdb
 $background-color: #fafafa
 $btn-color: #b2dffc
 $facebook-color: #385185
+    
+@mixin mobile
+    @media(max-width: 425px)
+        @content
 
 @mixin container
     flex: 1 1 0
@@ -37,11 +41,17 @@ li
 .main-container
     display: flex
     flex-direction: row
-    margin-top: 30px
+    margin-top: 50px
+
+    @include mobile
+        margin-top: 0
 
     .banner-container
         @include container
         text-align: right
+
+        @include mobile
+            display: none
 
         img
             margin-right: -15px
@@ -50,9 +60,18 @@ li
         @include container
         text-align: center
 
+        @include mobile
+            width: 100%
+            border: none
+
         #form-box
             @include borda
             @include box
+
+            @include mobile
+                margin-top: 0
+                width: 100%
+                border: none
 
             #logo-insta
                 height: 51px
@@ -132,6 +151,11 @@ li
             margin-top: 10px
             padding: 25px
 
+            
+            @include mobile
+                width: 100%
+                border: none
+
             p
                 font-size: 14px
                 color: #262626
@@ -143,6 +167,10 @@ li
         .get-app-container
             text-align: center
             width: 350px
+
+            @include mobile
+                width: 100%
+                border: none
 
             p
                 margin: 20px 0
@@ -157,10 +185,17 @@ footer
     width: 1000px
     margin: 50px auto
 
+    @include mobile
+    width: 90%
+    text-align: center
+
     .footer-links
 
         li
             margin-right: 10px
+
+            @include mobile
+                margin-bottom: 10px
 
             a
                 color: #00376b

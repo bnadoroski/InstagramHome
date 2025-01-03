@@ -23,12 +23,22 @@ li {
 .main-container {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  margin-top: 50px;
+}
+@media (max-width: 425px) {
+  .main-container {
+    margin-top: 0;
+  }
 }
 .main-container .banner-container {
   flex: 1 1 0;
   width: 50%;
   text-align: right;
+}
+@media (max-width: 425px) {
+  .main-container .banner-container {
+    display: none;
+  }
 }
 .main-container .banner-container img {
   margin-right: -15px;
@@ -38,11 +48,24 @@ li {
   width: 50%;
   text-align: center;
 }
+@media (max-width: 425px) {
+  .main-container .form-container {
+    width: 100%;
+    border: none;
+  }
+}
 .main-container .form-container #form-box {
   border: 1px solid #dbdbdb;
   background-color: #fff;
   width: 350px;
   margin-top: 30px;
+}
+@media (max-width: 425px) {
+  .main-container .form-container #form-box {
+    margin-top: 0;
+    width: 100%;
+    border: none;
+  }
 }
 .main-container .form-container #form-box #logo-insta {
   height: 51px;
@@ -124,6 +147,12 @@ li {
   margin-top: 10px;
   padding: 25px;
 }
+@media (max-width: 425px) {
+  .main-container .form-container .register-container {
+    width: 100%;
+    border: none;
+  }
+}
 .main-container .form-container .register-container p {
   font-size: 14px;
   color: #262626;
@@ -135,6 +164,12 @@ li {
 .main-container .form-container .get-app-container {
   text-align: center;
   width: 350px;
+}
+@media (max-width: 425px) {
+  .main-container .form-container .get-app-container {
+    width: 100%;
+    border: none;
+  }
 }
 .main-container .form-container .get-app-container p {
   margin: 20px 0;
@@ -149,9 +184,16 @@ footer {
   text-align: left;
   width: 1000px;
   margin: 50px auto;
+  width: 90%;
+  text-align: center;
 }
 footer .footer-links li {
   margin-right: 10px;
+}
+@media (max-width: 425px) {
+  footer .footer-links li {
+    margin-bottom: 10px;
+  }
 }
 footer .footer-links li a {
   color: #00376b;
